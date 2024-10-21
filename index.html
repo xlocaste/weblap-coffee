@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+    <title>Weblap Cafe</title>
+</head>
+<body class="font-poppins bg-cover bg-center" style="background-image: url('image/background.jpeg');">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="relative z-10">
+        <!-- NAVBAR -->
+        <nav class="bg-transparent bg-opacity-70">
+            <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+                <div class="flex items-center">
+                    <h1 class="font-bold text-primary text-2xl"><a href="" class="text-accent">Weblap</a> Cafe</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-primary hover:text-background">Home</a>
+                    <a href="#" class="text-primary hover:text-background">About Us</a>
+                    <a href="#" class="text-primary hover:text-background">Our Services</a>
+                    <a href="#" class="text-primary hover:text-background">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-primary focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="menu" class="fixed inset-y-0 right-0 bg-background bg-opacity-90 w-64 transform translate-x-full transition-transform duration-500 ease-in-out" aria-hidden="true">
+                <div class="flex items-center justify-between p-4 bg-background">
+                    <h2 class="text-accent text-lg font-bold">Menu</h2>
+                    <button id="close-btn" class="text-primary focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex flex-col space-y-6 p-4 text-end">
+                    <a href="#" class="text-primary hover:text-background">Home</a>
+                    <a href="#" class="text-primary hover:text-background">About Us</a>
+                    <a href="#" class="text-primary hover:text-background">Our Services</a>
+                    <a href="#" class="text-primary hover:text-background">Contact</a>
+                </div>
+            </div>
+        </nav>
+    
+        <header class="bg-transparent text-primary ">
+            <div class="max-w-7xl mx-auto px-4 py-32 flex flex-col-reverse md:flex-row items-center">
+                <div class="md:w-1/2">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4 text-primary"><a href="" class="text-accent">Selamat</a> Datang di Weblap <a href="" class="text-accent">Cafe</a></h1>
+                    <p class="text-lg md:text-xl font-light mb-8">Nikmati pengalaman bersantap yang tak terlupakan dengan menu lezat <a href="" class="text-accent">kami.</a></p>
+                    <a href="#menu" class="bg-background text-primary px-6 py-3 rounded-lg shadow-lg hover:bg-opacity-80 transition duration-300">Lihat Menu</a>
+                </div>
+            </div>
+        </header>
+        
+        <!-- GRADASI BAWAH HEADER -->
+        <div class="bg-gradient-to-t from-background to-transparent w-full h-32"></div>
+
+        <!-- ABOUT -->
+        <section class="bg-background py-20">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-8 text-center">About <a href="" class="text-accent">Us</a></h2>  
+                <p class="text-lg md:text-xl text-primary font-light mb-6 text-justify md:text-center">
+                    Di Weblap Cafe, kami percaya bahwa pengalaman bersantap tidak hanya tentang makanan yang lezat, 
+                    tetapi juga tentang suasana yang nyaman dan pelayanan yang ramah. Kami menyajikan berbagai hidangan 
+                    yang terbuat dari bahan-bahan berkualitas tinggi, dan kami selalu berusaha untuk menciptakan 
+                    pengalaman yang tak terlupakan bagi setiap pelanggan.
+                </p>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="bg-background py-16">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold text-primary mb-8">Our <a href="" class="text-accent">Services</a></h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-background border-2 border-accent bg-opacity-90 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <img src="image/coffee-icon.png" alt="Coffee Icon" class="w-16 mx-auto mb-4">
+                        <h3 class="text-2xl font-semibold text-primary mb-2">Specialty Coffee</h3>
+                        <p class="text-primary">Nikmati berbagai pilihan kopi spesial yang diracik oleh barista profesional kami untuk pengalaman minum kopi terbaik.</p>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="bg-background border-2 border-accent bg-opacity-90 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <img src="image/food-icon.png" alt="Food Icon" class="w-16 mx-auto mb-4">
+                        <h3 class="text-2xl font-semibold text-primary mb-2">Gourmet Meals</h3>
+                        <p class="text-primary">Kami menyajikan makanan gourmet berkualitas tinggi yang dibuat dengan bahan segar dan teknik memasak terbaik.</p>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="bg-background border-2 border-accent bg-opacity-90 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <img src="image/space-icon.png" alt="Space Icon" class="w-16 mx-auto mb-4">
+                        <h3 class="text-2xl font-semibold text-primary mb-2">Cozy Workspace</h3>
+                        <p class="text-primary">Cafe kami menyediakan ruang kerja yang nyaman dan tenang, sempurna untuk bekerja atau belajar dengan akses Wi-Fi gratis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+        const closeBtn = document.getElementById('close-btn');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.remove('translate-x-full');
+            menu.classList.add('translate-x-0');
+            menu.classList.remove('hidden');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            menu.classList.add('translate-x-full');
+            menu.classList.add('hidden');
+        });
+    </script>
+
+</body>
+</html>
