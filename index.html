@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link href="./output.css" rel="stylesheet">
     <title>Weblap Cafe</title>
 </head>
-<body class="font-poppins bg-cover bg-center" style="background-image: url('image/background.jpeg');">
+<body class="font-poppins">
+    <div class="relative h-screen bg-cover sm:w-full sm:h-auto bg-no-repeat sm:bg-contain" style="background-image: url('image/background.jpeg');">
     <div class="absolute inset-0 bg-black opacity-50"></div>
     <div class="relative z-10">
         <!-- NAVBAR -->
-        <nav class="bg-transparent bg-opacity-70">
-            <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <nav class="bg-transparent bg-opacity-70 pt-4">
+            <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
                 <div class="flex items-center">
                     <h1 class="font-bold text-primary text-2xl"><a href="" class="text-accent">Weblap</a> Cafe</h1>
                 </div>
@@ -81,19 +83,19 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <!-- Service 1 -->
                     <div class="bg-background border-2 border-accent bg-opacity-90 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                        <img src="image/coffee-icon.png" alt="Coffee Icon" class="w-16 mx-auto mb-4">
+                        <img src="image/icon 1.png" alt="Coffee Icon" class="w-16 mx-auto mb-4 text-accent">
                         <h3 class="text-2xl font-semibold text-primary mb-2">Specialty Coffee</h3>
                         <p class="text-primary">Nikmati berbagai pilihan kopi spesial yang diracik oleh barista profesional kami untuk pengalaman minum kopi terbaik.</p>
                     </div>
                     <!-- Service 2 -->
                     <div class="bg-background border-2 border-accent bg-opacity-90 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                        <img src="image/food-icon.png" alt="Food Icon" class="w-16 mx-auto mb-4">
+                        <img src="image/icon 2.png" alt="Food Icon" class="w-16 mx-auto mb-4 text-accent">
                         <h3 class="text-2xl font-semibold text-primary mb-2">Gourmet Meals</h3>
                         <p class="text-primary">Kami menyajikan makanan gourmet berkualitas tinggi yang dibuat dengan bahan segar dan teknik memasak terbaik.</p>
                     </div>
                     <!-- Service 3 -->
                     <div class="bg-background border-2 border-accent bg-opacity-90 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                        <img src="image/space-icon.png" alt="Space Icon" class="w-16 mx-auto mb-4">
+                        <img src="image/icon 3.png" alt="Space Icon" class="w-16 mx-auto mb-4 text-accent">
                         <h3 class="text-2xl font-semibold text-primary mb-2">Cozy Workspace</h3>
                         <p class="text-primary">Cafe kami menyediakan ruang kerja yang nyaman dan tenang, sempurna untuk bekerja atau belajar dengan akses Wi-Fi gratis.</p>
                     </div>
@@ -101,8 +103,79 @@
             </div>
         </section>
 
+        <!-- CONTACT US -->
+        <section id="contact" class="bg-background py-20">
+            <div class="max-w-7xl mx-auto px-4 bg-background rounded-xl border-2 border-accent p-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-8 text-center">Kontak <a href="" class="text-accent">Kami</a></h2>
+                <p class="text-lg md:text-xl text-primary font-light mb-6 text-center">Kami senang mendengar dari Anda! Jika Anda memiliki pertanyaan atau komentar, silakan hubungi kami melalui informasi di bawah ini.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-accent rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition duration-300">
+                        <h3 class="text-2xl font-semibold text-background mb-2">Alamat</h3>
+                        <p class="text-background">123 Jalan Kopi, Bandung, Indonesia</p>
+                    </div>
+                    <div class="bg-accent rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition duration-300">
+                        <h3 class="text-2xl font-semibold text-background mb-2">Telepon</h3>
+                        <p class="text-background">+62 123 4567 890</p>
+                    </div>
+                    <div class="bg-accent rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition duration-300">
+                        <h3 class="text-2xl font-semibold text-background mb-2">Email</h3>
+                        <p class="text-background">info@weblapcafe.com</p>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <h3 class="text-2xl font-semibold text-primary mb-4">Ikuti Kami</h3>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-primary hover:text-background transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-primary hover:text-background transition duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-primary hover:text-background transition duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-primary hover:text-background transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="bg-accent text-background py-10 pb-0">
+            <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Section 1: Company Info -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Weblap Cafe</h3>
+                    <p class="mb-4 text-justify">Nikmati kopi terbaik dan suasana nyaman di cafe kami. Kami menyediakan ruang kerja dan makanan lezat untuk menemani waktu bersantaimu.</p>
+                </div>
+                <!-- Section 2: Quick Links -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-primary">Home</a></li>
+                        <li><a href="#" class="hover:text-primary">About Us</a></li>
+                        <li><a href="#" class="hover:text-primary">Services</a></li>
+                        <li><a href="#" class="hover:text-primary">Contact</a></li>
+                        <li><a href="#" class="hover:text-primary">Menu</a></li>
+                    </ul>
+                </div>
+                <!-- Section 3: Contact Info -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt mr-2"></i>123 Tanjung Bugis, Sambas, Kalimantan Barat , Indonesia</p>
+                    <p><i class="fas fa-phone mr-2"></i>+62 123 4567 890</p>
+                    <p><i class="fas fa-envelope mr-2"></i>info@weblapcafe.com</p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-primary hover:text-background"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-primary hover:text-background"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-primary hover:text-background"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-primary hover:text-background"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t-2 border-background mt-8 py-3">
+                <div class="max-w-7xl mx-auto px-4 flex justify-center">
+                    <p class="text-sm text-center text-background">&copy; 2024 Weblap Cafe. All Rights Reserved.</p>
+                </div>
+            </div>             
+        </footer>        
 
     </div>
+</div>
 
     <script>
         const menuBtn = document.getElementById('menu-btn');
